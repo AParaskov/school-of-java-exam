@@ -16,6 +16,8 @@
 	<properties>
 		<java.version>11</java.version>
 		<testcontainers.version>1.15.3</testcontainers.version>
+		<modelmapper.version>2.4.0</modelmapper.version>
+		<super-csv.version>2.4.0</super-csv.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -31,10 +33,15 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.liquibase</groupId>
-			<artifactId>liquibase-core</artifactId>
+			<groupId>net.sf.supercsv</groupId>
+			<artifactId>super-csv</artifactId>
+			<version>${super-csv.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>${modelmapper.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
